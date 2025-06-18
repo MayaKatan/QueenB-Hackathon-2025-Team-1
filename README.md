@@ -1,4 +1,4 @@
-# Frind-LI – QueenB Hackathon Project🦕👑
+# Friend-LI – QueenB Hackathon Project🦕👑
 
 This project was developed as part of the QueenB Hackathon, which marked the end of a year-long program where middle school girls learned how to build websites and explore the world of technology.
 
