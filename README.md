@@ -23,5 +23,5 @@ As their mentor, I was incredibly proud to watch them present their work with co
 
 ---
 
-*Developed by: Yasmin, Ava, Avigail, and Almog  
+*Developed by: Yasmin, Eva, Avigail, and Almog  
 Mentor: Maya Katan*
