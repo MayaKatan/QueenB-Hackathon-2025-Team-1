@@ -15,3 +15,13 @@ The girls built a website focused on animal welfare, with the goal of raising aw
 - **About Us Page** – Introducing each team member in their own words.
 
 ## 🌟 Educational Impact
+The hackathon and the final project were a meaningful closure to a year of learning web development. It was designed to inspire these young girls to pursue tech-oriented high school tracks and future STEM careers — helping bridge the gender gap in the tech industry.
+
+## 🧡 Personal Note
+
+As their mentor, I was incredibly proud to watch them present their work with confidence and passion. This project is more than just code – it’s a statement of values, creativity, and teamwork.
+
+---
+
+*Developed by: Yasmin, Ava, Avigail, and Almog  
+Mentor: Maya Katan*
