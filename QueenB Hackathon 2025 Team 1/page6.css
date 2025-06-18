@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karantina:wght@300;400;700&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff0f5; /* ורוד בהיר מאוד */
+  font-family: "Rubik Doodle Shadow", cursive, sans-serif;
+  color: #4b2c34; /* סגול/ורוד כהה */
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  user-select: none;
+}
+
+header h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: #d63384; /* ורוד עמוק */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #f7a8b8; /* צל ורוד */
+  text-align: center;
+}
+
+.pet-card {
+  background: linear-gradient(145deg, #fcbad3, #f8a5c2); /* ורודים */
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: 4px 4px 15px #e598b0, -4px -4px 15px #ffc2d1;
+  max-width: 600px;
+  width: 90vw;
+  text-align: center;
+  color: #fff0f5;
+  min-height: 550px;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #f7a8b8;
+  border: none;
+}
+
+.pet-info {
+  background-color: #ffe4ec; /* ורוד קרמי */
+  color: #4b2c34;
+  margin: 15px 0 25px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(255, 182, 193, 0.3);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-family: "Amatic SC", cursive, sans-serif;
+  user-select: text;
+  min-height: 110px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  background: #f78fb3; /* ורוד חזק */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px #e07a9e;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.buttons button:hover {
+  background-color: #e07a9e;
+  transform: scale(1.1);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.adopt-button {
+  background-color: #f78fb3;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  font-family: "Amatic SC", cursive, sans-serif;
+  white-space: nowrap;
+  box-shadow: 2px 2px 8px #e07a9e;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 180px;
+}
+
+.adopt-button:hover {
+  background-color: #e07a9e;
+  transform: scale(1.05);
+}
+
+.adopt-button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .pet-card {
+    max-width: 90vw;
+    min-height: 550px;
+  }
+
+  .pet-info {
+    font-size: 1rem;
+    min-height: 130px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .adopt-button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    text-align: center;
+  }
+}
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-right-home a {
+  background-color: #F4B1C1; /* ורוד בהיר */
+  color: #5B2C42; /* טקסט כהה */
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(91, 44, 66, 0.2); /* ורוד כהה בשקיפות */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+}
+
+.top-right-home a:hover {
+  background-color: #E667A1; /* ורוד עמוק יותר */
+  transform: scale(1.05);
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karantina:wght@300;400;700&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+  font-size: 20px;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Rubik Doodle Shadow';
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  color: #C71585; /* במקום #556B2F */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #FF69B4; /* במקום #D9822B */
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 210px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #FF69B4; /* במקום #D9822B */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+  direction: rtl;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.flip-card-front {
+  font-weight: bold;
+  color: #C71585; /* במקום #556B2F */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Rubik Doodle Shadow' !important;
+  font-size: 40px !important;
+  margin-bottom: 10px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #f9f9f9;
+  color: #C71585; /* במקום #556B2F */
+}
+
+.pet-image {
+  display: block;
+  margin: 40px auto;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-right-home a {
+  background-color: #ffc0cb; /* במקום #f9c74f */
+  color: #2e3b3f;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family:'Playpen Sans Hebrew', sans-serif;
+}
+
+.top-right-home a:hover {
+  background-color: #ff69b4; /* במקום #f8961e */
+  transform: scale(1.05);
+}

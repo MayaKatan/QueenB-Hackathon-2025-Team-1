@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karantina:wght@300;400;700&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+  background-color: #FFF0F5; /* הורדתי לגוון ורוד בהיר */
+  color: #5A004C; /* סגול כהה, במקום חום */
+  direction: rtl;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+h1, h2 {
+  font-family: 'Rubik Doodle Shadow', cursive;
+  color: #C71585; /* סגול-ורוד בולט במקום ירוק */
+  text-shadow: 1px 1px 2px #FF69B4; /* ורוד זוהר במקום כתום */
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  border-bottom: 2px solid #FF69B4; /* ורוד זוהר במקום כתום */
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+  margin-top: 30px;
+  color: #C71585; /* סגול-ורוד */
+}
+
+p {
+  font-size: 1.25rem;
+  margin: 5px 0 15px;
+  padding: 15px;
+  text-align: justify;
+  background-color: #fff0f5cc; /* ורוד בהיר עם שקיפות */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffb6c1cc; /* ורוד בהיר עם שקיפות */
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+ul {
+  background-color: #fff0f5cc; /* ורוד בהיר עם שקיפות */
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 10px 0 15px;
+  box-shadow: 0 0 10px #ffb6c1cc; /* ורוד בהיר עם שקיפות */
+  list-style-type: disc;
+}
+
+li {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+/* הוספה חדשה לעיצוב התמונה ליד הכותרת */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.title-container img {
+  height: clamp(60px, 8vw, 80px);
+  width: auto;
+}
+
+.title-container h1 {
+  margin: 0;
+}
+
+/* התאמות למסכים קטנים */
+@media (max-width: 600px) {
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .title-container {
+    flex-direction: column-reverse;
+  }
+
+  .title-container img {
+    height: 60px;
+  }
+}
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-right-home a {
+  background-color: #F4B1C1; /* ורוד בהיר */
+  color: #5B2C42; /* טקסט כהה */
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(91, 44, 66, 0.2); /* ורוד כהה בשקיפות */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+}
+
+.top-right-home a:hover {
+  background-color: #E667A1; /* ורוד עמוק יותר */
+  transform: scale(1.05);
+}
+
+

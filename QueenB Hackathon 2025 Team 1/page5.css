@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karantina:wght@300;400;700&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Doodle+Shadow&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+  background-color: #ffe6f0; /* ורוד פסטל לרקע */
+  color: #6e1a36; /* חום-ורוד כהה לטקסט */
+  direction: rtl;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-family: 'Rubik Doodle Shadow';
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #b03060; /* ורוד כהה */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #ff91a488; /* ורוד בוהק שקוף */
+}
+
+p {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8b3a62;
+}
+
+button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  padding: 14px 36px;
+  background: linear-gradient(145deg, #d36c9c, #b84d85); /* גווני ורוד */
+  color: #fff0f5; /* ורוד בהיר מאוד לטקסט */
+  border: none;
+  border-radius: 18px;
+  box-shadow: 3px 3px 8px #a03d70, -3px -3px 8px #f292bc;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px 4px #ff69b4; /* ורוד זוהר */
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: inset 3px 3px 6px #872657, inset -3px -3px 6px #f7a6c1;
+}
+
+img.centered-image {
+  width: 80%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 0 18px 6px #f7a6c155;
+}
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-right-home a {
+  background-color: #ffb6c1; /* ורוד בהיר */
+  color: #6e1a36; /* טקסט כהה */
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family:'Playpen Sans Hebrew', sans-serif;
+}
+
+.top-right-home a:hover {
+  background-color: #ff69b4; /* ורוד חזק יותר */
+  transform: scale(1.05);
+}

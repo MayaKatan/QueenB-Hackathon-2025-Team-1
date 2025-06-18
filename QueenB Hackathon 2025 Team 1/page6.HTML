@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>אימוץ בעלי חיים</title>
+  <link rel="stylesheet" href="page6.css" />
+</head>
+<body>
+  <div class="top-right-home">
+      <a href="index.html">חזרה לעמוד הראשי</a>
+  </div>
+  <header>
+    <h1>בואו למצוא את חיית המחמד הבאה שלכם!</h1>
+  </header>
+
+  <main>
+    <div class="pet-card">
+      <img id="petImage" src="" alt="בעל חיים לאימוץ" />
+      <div id="petInfo" class="pet-info"></div>
+      <div class="buttons">
+        <button aria-label="החיה הבאה" onclick="nextPet()">➡</button>
+        <button class="adopt-button" onclick="adoptPrompt()"> אשמח לאמץ!</button>
+        <button aria-label="החיה הקודמת" onclick="prevPet()">⬅</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="page6.js"></script>
+  <script>
+    function adoptPrompt() {
+      alert('אנחנו שמחות שבחרתם לאמץ דרך פרנד-לי!');
+      let fullName = prompt('אנא כתבו את שמכם המלא');
+      if (!fullName || !fullName.trim()) {
+        alert('שם מלא לא יכול להיות ריק.');
+        return;
+      }
+      let phone;
+      do {
+        phone = prompt('כתבו מספר טלפון בעל 10 ספרות ללא תווים נוספים');
+        if (phone === null) return; // ביטול
+        if (!/^\d{10}$/.test(phone)) {
+          alert('מספר טלפון לא תקין. יש להכניס 10 ספרות בדיוק.');
+        }
+      } while (!/^\d{10}$/.test(phone));
+
+      alert('נציג מטעמנו ייצור עמכם קשר בימים הקרובים לצורך תיאום.\n\nתודה, ' + fullName + '!');
+    }
+  </script>
+</body>
+</html>

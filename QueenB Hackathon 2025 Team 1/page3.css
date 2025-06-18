@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Karantina:wght@300;400;700&family=Playpen+Sans+Hebrew:wght@100..800&family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+  font-family: 'Rubik Doodle Shadow';
+  background-color: #FDECF7; /* רקע ורוד בהיר */
+  color: #5B2C42; /* טקסט ורוד כהה */
+  direction: rtl;
+  padding: 10px 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.header-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -20px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.main-title {
+  font-family: 'Rubik Doodle Shadow', cursive;
+  color: #A83279; /* ורוד כהה */
+  border-bottom: 2px solid #F78CA0; /* ורוד קורל */
+  text-shadow: 1px 1px 2px #F78CA0;
+  font-size: clamp(4rem, 5.5vw, 4rem);
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 7px 7px;
+}
+
+.profile {
+  width: 48%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.card {
+  min-height: 190px;
+  background-color: #fff0f6cc; /* ורוד חצי שקוף */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #F4B1C1; /* צל ורדרד */
+  padding: 18px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h2 {
+  font-family: 'Rubik Doodle Shadow';
+  color: #A83279; /* ורוד כהה */
+  text-shadow: 1px 1px 1px #F78CA0; /* ורוד קורל */
+  font-size: clamp(1.4rem, 3.3vw, 2.2rem);
+  margin-bottom: 12px;
+  text-align: center;
+  border-bottom: none;
+}
+
+p {
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: justify;
+  line-height: 1.4;
+  color: #5B2C42;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    width: 100%;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+.top-right-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.top-right-home a {
+  background-color: #F4B1C1; /* ורוד בהיר */
+  color: #5B2C42; /* טקסט כהה */
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(91, 44, 66, 0.2); /* ורוד כהה בשקיפות */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Playpen Sans Hebrew', sans-serif;
+}
+
+.top-right-home a:hover {
+  background-color: #E667A1; /* ורוד עמוק יותר */
+  transform: scale(1.05);
+}
